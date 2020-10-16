@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#this is a chess board represented in a array
 #c-castle n-knight b-bishop q-queen k-king p-pawn 1-blank sqaure 
 board = [['c','n','b','q','k','b','n','c'],['p','p','p','p','p','p','p','p']]
 
