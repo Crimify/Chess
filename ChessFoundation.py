@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #c-castle n-knight b-bishop q-queen k-king p-pawn -blank sqaure 
-
+#a class that stores the information of what the chess looks like throught the game
 #create a class for the 2d array as a representation for the chess board and pieces 
 class Chessboard():
     def __init__(self):
