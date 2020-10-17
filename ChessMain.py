@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-import pygame 
+import pygame as p
+from ChessFoundation import Chessboard
 
-
-HEIGHT = 512
-WIDTH = 512 #
-DEMINSION = 8 #8x8
-
+#WIN = p.display.set_mode((WIDTH, HEIGHT))
+myBoard = Chessboard()
+myBoard.printboard()

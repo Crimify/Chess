@@ -16,6 +16,6 @@ class Chessboard():
                 
     def printboard(self):
         for row in self.board:
-            print(row)
+                print(row)
 
  
