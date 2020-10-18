@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import pygame as p
 from ChessFoundation import Chessboard
-from Chess.constants import WIDTH, HEIGHT
+from Chess.constants import *
 
 
 FPS = 30
@@ -18,11 +18,8 @@ def main():
         clock.tick(FPS)
         
         for event in p.event.get():
-            if event.type == pygame.QUIT:
+            if event.type == p.QUIT:
                 run = False
-            if event.tpye == p.MOUSEBUTTONDOWN: 
+            if event.type == p.MOUSEBUTTONDOWN: 
                 pass 
-    pygame.quit() 
-
-myBoard = Chessboard()
-myBoard.printboard()
+    p.quit() 
