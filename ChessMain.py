@@ -32,7 +32,7 @@ def main():
             if event.type == p.QUIT:
                 run = False
             if event.type == p.MOUSEBUTTONDOWN: 
-                pass 
+                print("github") 
         gameFoundation(window, myboard)
         p.display.update()
     p.quit() 

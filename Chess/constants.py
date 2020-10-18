@@ -6,5 +6,6 @@ ROWS = 8
 COLUMNS = 8
 SQ_SIZE = 64
 
+
 WHITE = (255,255,255)
 BLACK = (0,0,0)
