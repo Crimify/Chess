@@ -1,25 +1,30 @@
-#!/usr/bin/python3
-import pygame as p
+
+import pygame
 from ChessFoundation import Chessboard
 from Chess.constants import *
 
 
 FPS = 30
 
-WIN = p.display.set_mode((WIDTH, HEIGHT))
-p.display.set_caption('Chess')
-
+myboard = Chessboard()
+myboard.printboard()
+WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption('Chess')
 
 def main():
     run = True 
-    clock = p.time.Clock()
+    clock = pygame.time.Clock()
+    
     
     while run: 
+        
         clock.tick(FPS)
         
-        for event in p.event.get():
-            if event.type == p.QUIT:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
                 run = False
-            if event.type == p.MOUSEBUTTONDOWN: 
-                pass 
-    p.quit() 
+            if event.type == pygame.MOUSEBUTTONDOWN: 
+                print("Crim")
+    
+    pygame.quit() 
+main()
