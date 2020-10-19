@@ -32,7 +32,8 @@ def main():
             if event.type == p.QUIT:
                 run = False
             if event.type == p.MOUSEBUTTONDOWN: 
-                print("github") 
+                mouselocation = p.mouse.get_pos()
+                print(mouselocation)
         gameFoundation(window, myboard)
         p.display.update()
     p.quit() 
@@ -49,8 +50,10 @@ def drawBoard(window):
 
 def drawPieces(window, myboard):
     for row in range(ROWS):
-        for col in range(ROWS):
+        for col in range(COLUMNS):
             piece = myboard[col][row]
             if piece != "--":
                 window.blit(IMAGES[piece], (row*SQ_SIZE, col*SQ_SIZE, SQ_SIZE, SQ_SIZE))
+
+
 main()
